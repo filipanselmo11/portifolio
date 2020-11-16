@@ -6,20 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/9f6fd952ea.js" crossorigin="anonymous"></script>
     <title>Portifólio</title>
-    
+
 </head>
 
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: gray;">
+        <a class="navbar-brand font-weight-bold" href="#">Fílip Anselmo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#Sobre">Sobre</a>
+                <a class="nav-item nav-link" href="#About">About</a>
+                <a class="nav-item nav-link" href="#Contacts">Contacts</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <section class="home" id="Home">
+        <div class="welcome container-fluid d-flex flex-row justify-content-around align-items-center">
+            <div class="p1 text-left">
+                <h1 class="font-weight-bold mb-5">Olá, <br /> Eu sou <span style="color: rgb(39, 119, 238)">Fílip
+                        Anselmo</span><br />Apenas um desenvolvedor<br />
+                </h1>
+                <a href="http://www.linkedin.com/in/fílip-anselmo-04b651152"><i class="fab fa-linkedin fa-2x mr-3"
+                        style="color: #0077b5;"></i></a>
+                <a href="https://github.com/filipanselmo11" style="text-decoration:none; color:black;"><i
+                        class="fab fa-github fa-2x"></i></a>
+            </div>
+            <div>
+                <img class="p2 img-fluid" src="images/eu.jpeg" />
+            </div>
+        </div>
+    </section>
+    <section class="sobre" id="Sobre">
+        <div class="container-fluid text-center mb-5">
+            <h2 class="mb-5">Sobre</h2>
+            <p class="about-text">
+                Sou brasileiro, tenho 23 anos, sou estudante de graduação do curso de Sistemas de Informação pela
+                UEA-EST(<i>Universidade do Estado do Amazonas</i>), eu desenvolvo aplicações web/mobile desde 2015,
+                quando dei inicio a minha graduação.
+                Atualmente, sou estagiário no TCE-AM(<i>Tribunal de Contas do Estado do Amazonas</i>). Lá eu trabalho
+                como desenvolvedor e faço manuntenção de aplicações. Já participei de alguns projetos, como o projeto de
+                reconhecimento facial e o projeto Spede 2, que é um sistema do TCE-AM.<br />
+                Gosto de Front-End, onde é a area que to fazendo parte atualmente, tenho conhecimento básico no
+                back-end, principalmente Node JS. Também gosto de Aprendizagem de Máquina, Ciência de Dados e
+                Blockchain.
+            </p>
+        </div>
+    </section>
+    <section class="about" id="About">
+        <div class="container-fluid text-center mb-5">
+            <h2 class="mb-5">About</h2>
+            <p class="about-text">
+                I am Brazilian, I am 23 years old, I am a graduate student in the Information Systems course at
+                UEA-EST (<i> Amazonas State University </i>), I develop web / mobile applications since 2015,
+                when I started my graduation.
+                I am currently an intern at TCE-AM (<i> Amazonas State Court of Auditors </i>). There I work
+                as a developer and do application maintenance. I have already participated in some projects, such as the
+                facial recognition and the Spede 2 project, which is a TCE-AM system. <br />
+                I like Front-End, where is the area that I am currently part of, I have basic knowledge in
+                backend, mainly Node JS. I also like Machine Learning, Data Science and
+                Blockchain.
+            </p>
+        </div>
+    </section>
+    <section class="skills" id="Skills">
+        <div class="container-fluid text-center">
+            <h2 class="mb-5">Skills</h2>
+            <div class="text-center container">
+                <div class="row justify-content-md-center align-center mb-3">
+                    <div class="col"><i class="fab fa-js-square fa-7x" style="color: yellow;"></i></div>
+                    <div class="col"><i class="fab fa-html5 fa-7x" style="color: orange;"></i></div>
+                    <div class="col"><i class="fab fa-css3-alt fa-7x" style="color: blue;"></i></div>
+                    <div class="col"><i class="fab fa-vuejs fa-7x" style="color: #41B883;"></i></div>
+                    <div class="col"><i class="fab fa-react fa-7x" style="color: #78caf7;"></i></div>
+                    <div class="col"><i class="fab fa-angular fa-7x" style="color: red;"></i></div>
+                    <div class="col"><i class="fab fa-node fa-7x" style="color:#68A063;"></i></div>
+                    <div class="col"><i class="fab fa-python fa-7x" style="color:#FFD43B;"></i></div>
+                </div>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Vue.JS</li>
+                    <li>React.JS</li>
+                    <li>Angular 9</li>
+                    <li>Node.JS</li>
+                    <li>Python 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+<footer class="footer">
+    <section class="contacts" id="Contacts">
+        <div class="container-fluid text-center">
+            <a href="mailto:filip_anselmo@yahoo.com.br"><i class="fas fa-envelope-square fa-2x mt-5 mr-5"
+                    style="color:white;"></i></a>
+        </div>
+    </section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 
 </html>

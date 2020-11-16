@@ -1,0 +1,174 @@
+/*Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(172, 172, 172);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 119, 238) !important;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(39, 119, 238) !important;
+}
+
+/*Scrollbar*/
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: rgb(39, 119, 238);
+  transition: 0.2s;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(39, 119, 238);
+}
+.nav-link {
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+
+.home {
+  padding-top: 150px;
+  margin-bottom: 150px;
+}
+.welcome {
+  max-width: 100%;
+}
+.p1 h1 {
+  font-size: 3.5vw;
+}
+.p2 {
+  object-fit: fill;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.about {
+  padding-top: 150px;
+  margin-bottom: 150px;
+}
+
+.about-text {
+  font-size: 18px;
+}
+
+.skills {
+  padding-top: 80px;
+  margin-bottom: 250px;
+}
+ul {
+  margin-top: 35px;
+}
+ul > li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+li::before {
+  content: "* ";
+}
+li::after {
+  content: " ";
+}
+
+.footer {
+  height: 250px;
+  background-color: #1e70aa;
+}
+
+@media screen and (max-width: 280px) {
+  .fa-2x {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .p1 h1 {
+    font-size: 7.5vw;
+    margin-bottom: 15px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .home {
+    margin-bottom: 0px !important;
+  }
+  .p1 h1 {
+    font-size: 7vw;
+  }
+  .p2 {
+    max-width: 200px !important;
+  }
+  .about {
+    padding-top: 75px;
+    margin-bottom: 100px !important;
+  }
+  .skills {
+    padding-top: 10px !important;
+  }
+  .fa-7x {
+    font-size: 4em !important;
+  }
+  ul {
+    margin-top: 20px;
+    padding-inline-start: 0px;
+  }
+  .skills {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p1 h1 {
+    font-size: 6vw;
+    margin-bottom: 15px !important;
+  }
+  .p2 {
+    max-width: 220px;
+  }
+  .about {
+    padding-top: 100px !important;
+  }
+  .skills {
+    padding-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    margin-bottom: 0px;
+  }
+  .about {
+    margin-bottom: 0px;
+  }
+  .skills {
+    margin-bottom: 100px;
+  }
+  .p1 h1 {
+    font-size: 5.5vw;
+  }
+  ul {
+    margin-top: 20px;
+    padding-inline-start: 0px;
+  }
+}
